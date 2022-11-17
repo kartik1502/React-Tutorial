@@ -1,0 +1,22 @@
+.row-wrapper{
+    color: #fff;
+    margin-bottom: 10px;
+    z-index: 3;
+    margin-left: 5vw;
+}
+.row-title{
+    font-weight: bold;
+    font-size: 1.4rem;
+    letter-spacing: 0.7px;
+    margin-bottom: 10px;
+    z-index: 3;
+    color: #fff;
+}
+.row-card{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    height: 130px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}

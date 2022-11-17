@@ -1,16 +1,14 @@
+import "./Content.css";
+import RowData from "../../constants/URLS";
+import Row from "../Row/Row";
 
-import './Content.css'
-import axios from 'axios'
-
-function Content() {
-  
-  const getMovies = () => {
-      const response = axios.get("https://api.themoviedb.org/3/movie/top_rated" ,{
-        params: {
-          api_key : "8eff6f1c66dfa3283d878588d6ab6ff3"
-        }
-      })
-  }
+export default function Content() {
+  return (
+    <div className='content-wrapper'>
+      {RowData.map((el) => {
+        return <Row title={el.title} url={el.url} />;
+      })}
+    </div>
+  );
 }
-//
-export default Content;
+
