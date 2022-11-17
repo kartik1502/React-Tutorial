@@ -1,0 +1,7 @@
+.content-wrapper{
+    height: 100vh;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
