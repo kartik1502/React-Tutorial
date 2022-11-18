@@ -1,48 +1,52 @@
-.logo{
-    width: 110px;
-    margin-left: 2%;
-}
-section{
+nav {
+    height: 8vh;
     width: 100vw;
+    position: fixed;
+    z-index: 10;
+    font-size: 0.9rem;
+}
+
+section {
+    width: 90%;
     height: 100%;
-    margin-inline: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-inline: auto;
 }
-nav{
-    background-color: transparent;
-    position: fixed;
-    height: 8%;
-    z-index: 10;
-}
-.navLeft{
+
+.nav_left {
     display: flex;
     width: 85%;
 }
-.nav-links{
-    margin-left: 1.8rem;
+
+.nav_logo {
+    height: 1.8rem;
+}
+
+.nav_links {
+    margin-left: 1.2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.nav-links a{
-    margin-left: 1rem;
+
+.nav_links a {
     color: #fff;
     text-decoration: none;
-    transition: 0.3s ease;
+    margin-left: 1rem;
+    font-size: 0.8rem;
+    transition: 0.6s ease;
 }
-.navRight{
+
+.nav_links a:hover {
+    color: rgb(156, 156, 156);
+}
+
+.nav_right {
     color: #fff;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     flex: 1;
-}
-.nav_avatar{
-    margin-right: 8%;
-    border-radius: 3px;
-}
-.nav-links a:hover{
-    color: rgb(150, 150, 150);
 }

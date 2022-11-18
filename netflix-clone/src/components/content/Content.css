@@ -1,8 +1,7 @@
-.content-wrapper{
-    margin-top: -5vw;
-    position: absolute;
+.content-wrapper {
+    margin-top: -6vw;
+    position: relative;
 }
-
 ::-webkit-scrollbar{
     display: none;
 }

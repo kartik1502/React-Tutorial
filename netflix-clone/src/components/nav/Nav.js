@@ -1,43 +1,47 @@
-import "./Nav.css";
-import { useState, useEffect } from "react";
-const Nav = () => {
+import './Nav.css';
+import { useState, useEffect } from 'react';
 
+const Nav = () => {
   const [show, setShow] = useState(false);
+
   const scrollHandler = () => {
-    if(window.scrollY > 10){
-      setShow(true)
+    if (window.scrollY > 10) {
+      setShow(true);
+    } else {
+      setShow(false);
     }
-    else{
-      setShow(false)
-    }
-  }
+  };
+
   useEffect(() => {
-    window.addEventListener("scroll", scrollHandler );
-  return () =>{
-    window.removeEventListener('scroll', scrollHandler);
-  }
+    window.addEventListener('scroll', scrollHandler);
+    return () => {
+      window.removeEventListener('scroll', scrollHandler);
+    };
   }, []);
+
   return (
-    <nav style={{
-      backgroundColor: show ? 'rgb(20,20,20)' : 'transparent',
-    }}>
+    <nav
+      style={{
+        backgroundColor: show ? 'rgb(20,20,20)' : 'transparent',
+      }}
+    >
       <section>
-        <div className="navLeft">
+        <div className='nav_left'>
           <img
-            className="logo"
-            alt=""
-            src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png"
+            className='nav_logo'
+            alt='logo'
+            src='https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png'
           />
-          <div className="nav-links">
-            <a href="/">Home</a>
-            <a href="/">TV Shows</a>
-            <a href="/">Movies</a>
-            <a href="/">New & Popular</a>
-            <a href="/">My List</a>
-            <a href="/">Browse by Languages</a>
+          <div className='nav_links'>
+            <a href='/'>Home</a>
+            <a href='/'>TV Shows</a>
+            <a href='/'>TV Movies</a>
+            <a href='/'>New & Popular</a>
+            <a href='/'>My List</a>
+            <a href='/'>Browse by Language</a>
           </div>
         </div>
-        <div className="navRight">
+        <div className='nav_right'>
           <svg
             width='24'
             height='24'
